@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.carousel-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
+@media (min-width: 640px) {
+  .carousel-item {
+    min-width: 50%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .carousel-item {
+    min-width: 33.3333%;
+  }
+}
